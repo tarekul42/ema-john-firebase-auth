@@ -10,8 +10,12 @@ const Header = () => {
     console.log(user);
 
     const handleLogOut = () => {
-        
-    }
+        logOut()
+         .then(result =>{})
+         .catch(error => {
+            console.log(error);
+         })
+    };
 
     return (
         <nav className='header'>
